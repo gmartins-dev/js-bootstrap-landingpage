@@ -13,6 +13,13 @@ CTRL + K + Z = modo zen
 CTRL + SHIFT + . -> localizar error
 CTRL + . -> sugestoes de correção errors
 CTRL + SHIFT + L -> renomear seleção 
-CTRL + D -> navegar por palavras repetidas
+CTRL + D -> selecione e navegue por palavras repetidas
 CTRL + ; -> comentar um bloco selecionado
 
+HOLD "ALT" AND SELECT -> editar varios lugares simultaneamente
+
+CTRL + ' -> open terminal
+
+Terminal:
+CTRL + L ----> clean terminal logs
+CTRL + C ----> cancel operation/kill server
