@@ -4,14 +4,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  background: #161616;
+  background: #6b6b6b;
 }
 nav{
   position: fixed;
   z-index: 99;
   width: 100%;
   
-  background: #FFFFFF;
+ 
 }
 nav .wrapper{
   position: relative;
@@ -22,14 +22,16 @@ nav .wrapper{
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .wrapper .logo a{
   color: #f2f2f2;
   font-size: 30px;
   font-weight: 600;
   text-decoration: none;
+  margin-right: 10px;
 }
+
 .wrapper .nav-links{
   display: inline-flex;
 }
@@ -59,8 +61,8 @@ nav .wrapper{
   width: 180px;
   line-height: 45px;
   top: 85px;
-  opacity: 0.9;
-  visibility: xxx;
+  opacity: 0;
+  visibility: hidden;
   box-shadow: 0 6px 10px rgba(0,0,0,0.15);
 }
 .nav-links li:hover .drop-menu,
@@ -83,8 +85,8 @@ nav .wrapper{
   width: 100%;
   padding: 0 30px;
   top: 85px;
-  opacity: 0.9;
-  visibility: xxx;
+  opacity: 0;
+  visibility: hidden;
 }
 .mega-box .content{
   background: #FFFFFF;
@@ -200,7 +202,7 @@ nav .wrapper{
     padding-left: 20px;
     width: 100%;
     max-height: 0px;
-    overflow: xxx;
+    overflow: hidden;
     box-shadow: none;
     transition: all 0.3s ease;
   }
@@ -238,7 +240,7 @@ nav .wrapper{
     visibility: visible;
     padding: 0 20px;
     max-height: 0px;
-    overflow: xxx;
+    overflow: hidden;
     transition: all 0.3s ease;
   }
   .mega-box .content{
@@ -268,18 +270,4 @@ nav .wrapper{
 }
 nav input{
   display: none;
-}
-
-.body-text{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-  padding: 0 30px;
-}
-.body-text div{
-  font-size: 45px;
-  font-weight: 600;
 }
