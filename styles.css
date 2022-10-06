@@ -271,3 +271,5 @@ nav .wrapper{
 nav input{
   display: none;
 }
+
+#submenu-svg {margin-bottom: -8px; background-color: #ffffff;}
