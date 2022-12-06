@@ -8,10 +8,136 @@
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
   </head>
   <body>
-    <h1>teste</h1>
+    <h2 class="text-center font-weight-bold mt-5">
+      Why people love ChatWith.io
+    </h2>
+    <div class="gtco-testimonials">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="https://etxeonena.com/wp-content/uploads/2022/10/Etxeonena-WhatsApp-2-116x116.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>ETXEONENA <br /></h5>
+              <p class="card-text">
+                "At Etxeonena we're pleasantly surprised by the use that this
+                tool provides us, allowing us to have permanent, simple and very
+                close contact with all our clients. We can only recommend this
+                tool to anyone who wants to promote their brand and be close to
+                their customers"
+              </p>
+              <span> ⭐⭐⭐⭐⭐ </span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="https://i.pinimg.com/280x280_RS/2b/52/fa/2b52facd5a47fd40bcd7ac02bbe6d64d.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>mooncities.com<br /></h5>
+              <p class="card-text">
+                "WhatsApp Widgets for people who design web pages and with 24/7
+                customer support, excellent service. Highly recommended"
+              </p>
+              <span> ⭐⭐⭐⭐⭐ </span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="https://www.ntltech.it/images/icon/home_timeline_avatar.jpg"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>David Nogy<br /></h5>
+              <p class="card-text">
+                "It has been a very valuable and useful tool for our companies.
+                It has allowed us to integrate WhatsApp on our website,
+                improving communication with our customers. We work with Wix,
+                and after searching and analysing different possibilities, this
+                was without a doubt the best and easiest option. We've been with
+                this integration for more than a year and it has always worked
+                perfectly. Great job"
+              </p>
+              <span> ⭐⭐⭐⭐⭐ </span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="card text-center">
+            <img
+              class="card-img-top"
+              src="https://7514.smushcdn.com/949758/wp-content/uploads/bb-plugin/cache/profissional-empresa-avatar-biocentro-curitiba-square.png?lossy=0&strip=1&webp=1"
+              alt=""
+            />
+            <div class="card-body">
+              <h5>Grupo Rocket</h5>
+              <p class="card-text">
+                "One of the best integration platforms for WhatsApp. It has the
+                best value for money of all of them with advanced options and
+                integrations with CRM. They have support in several languages
+                and you can install the widget on any website. They even have a
+                plugin for WordPress. Very recommended."
+              </p>
+              <span> ⭐⭐⭐⭐⭐ </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      ;(function () {
+        "use strict"
+
+        var carousels = function () {
+          $(".owl-carousel1").owlCarousel({
+            loop: true,
+            center: true,
+            margin: 0,
+            responsiveClass: true,
+            nav: false,
+            responsive: {
+              0: {
+                items: 1,
+                nav: false,
+              },
+              680: {
+                items: 2,
+                nav: false,
+                loop: false,
+              },
+              1000: {
+                items: 3,
+                nav: true,
+              },
+            },
+          })
+        }
+
+        ;(function ($) {
+          carousels()
+        })(jQuery)
+      })()
+    </script>
   </body>
 </html>
