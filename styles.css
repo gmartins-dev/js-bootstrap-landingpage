@@ -1,12 +1,17 @@
 .parent {
   display: grid;
-  grid-template-columns: repeat(2, 1fr) repeat(2, 2fr) repeat(2, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  grid-column-gap: 2px;
-  grid-row-gap: 2px;
+  grid-template-columns: repeat(auto-fit, 10rem);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 90%;
+  margin: 300px auto;
+  border-width: 6px;
+  border-style: dashed;
+  border-color: blue;
+  justify-content: center;
 }
 
-.div1 {
+/* .div1 {
   grid-area: 1 / 1 / 4 / 2;
 }
 .div2 {
@@ -50,7 +55,7 @@
 }
 .div15 {
   grid-area: 5 / 5 / 7 / 7;
-}
+} */
 
 div {
   border-width: 6px;
