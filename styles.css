@@ -1,65 +1,246 @@
-.parent {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 10rem);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  width: 90%;
-  margin: 300px auto;
-  border-width: 6px;
-  border-style: dashed;
-  border-color: blue;
-  justify-content: center;
+main.gallery {
+  padding: 2rem;
 }
 
-/* .div1 {
-  grid-area: 1 / 1 / 4 / 2;
+.gallery > h1 {
+  font-size: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin-bottom: 1rem;
+  color: #333333;
+  font-weight: 100;
 }
-.div2 {
-  grid-area: 4 / 1 / 6 / 2;
+
+.gallery > .gallery__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-rows: repeat(6, 200px);
+  grid-gap: 1rem;
+  grid-auto-flow: dense;
 }
-.div3 {
-  grid-area: 6 / 1 / 7 / 2;
+
+
+/* .gallery > .gallery__list > li:nth-child(4n) {
+  grid-column: span 2;
+  grid-row: span 2;
 }
-.div4 {
-  grid-area: 1 / 2 / 3 / 4;
-}
-.div5 {
-  grid-area: 3 / 2 / 4 / 3;
-}
-.div6 {
-  grid-area: 4 / 2 / 6 / 3;
-}
-.div7 {
-  grid-area: 6 / 2 / 7 / 3;
-}
-.div8 {
-  grid-area: 1 / 4 / 3 / 5;
-}
-.div9 {
-  grid-area: 3 / 3 / 5 / 5;
-}
-.div10 {
-  grid-area: 5 / 3 / 7 / 4;
-}
-.div11 {
-  grid-area: 1 / 5 / 3 / 7;
-}
-.div12 {
-  grid-area: 3 / 5 / 5 / 6;
-}
-.div13 {
-  grid-area: 5 / 4 / 7 / 5;
-}
-.div14 {
-  grid-area: 3 / 6 / 5 / 7;
-}
-.div15 {
-  grid-area: 5 / 5 / 7 / 7;
+
+.gallery > .gallery__list > li:nth-child(8n) {
+  grid-column: span 3;
+  grid-row: span 3;
 } */
 
-div {
-  border-width: 6px;
-  border-style: dashed;
-  border-color: #f00;
-  text-align: center;
+.gallery > .gallery__list > li:nth-child(1) {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.gallery > .gallery__list > li:nth-child(2) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.gallery > .gallery__list > li:nth-child(3) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.gallery > .gallery__list > li:nth-child(4) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery > .gallery__list > li:nth-child(5) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.gallery > .gallery__list > li:nth-child(6) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.gallery > .gallery__list > li:nth-child(7) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.gallery > .gallery__list > li:nth-child(8) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.gallery > .gallery__list > li:nth-child(9) {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+.gallery > .gallery__list > li:nth-child(10) {
+  grid-column: span 1;
+  grid-row: span 3;
+}
+
+.gallery > .gallery__list > li:nth-child(11) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.gallery > .gallery__list > li:nth-child(12) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.gallery > .gallery__list > li:nth-child(13) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.gallery > .gallery__list > li:nth-child(14) {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.gallery > .gallery__list > li:nth-child(15) {
+  grid-column: span 3;
+  grid-row: span 1;
+}
+
+.gallery > .gallery__list > li > figure {
+  height: 100%;
+}
+
+.gallery > .gallery__list > li > figure > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
