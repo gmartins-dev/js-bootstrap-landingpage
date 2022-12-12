@@ -14,14 +14,14 @@ main.gallery {
 .gallery > .gallery__list {
   display: grid;
   grid-template-columns: repeat(6, minmax(min-content, 1fr));
-  grid-template-rows: repeat(6, 150px);
+  grid-template-rows: repeat(7, 150px);
   grid-gap: 1rem;
   grid-auto-flow: dense;
 }
 
 .gallery > .gallery__list > li:nth-child(1) {
   grid-column: span 1;
-  grid-row: span 3;
+  grid-row: span 4;
   background: blue;
 }
 
@@ -57,55 +57,55 @@ main.gallery {
 
 .gallery > .gallery__list > li:nth-child(7) {
   grid-column: span 1;
-  grid-row: span 2;
+  grid-row: span 3;
   background: yellow;
 }
 
 .gallery > .gallery__list > li:nth-child(8) {
   grid-column: span 1;
-  grid-row: span 2;
+  grid-row: span 3;
   background: yellowgreen;
 }
 
 .gallery > .gallery__list > li:nth-child(9) {
   grid-column: span 1;
-  grid-row: span 2;
+  grid-row: span 1;
   background: yellowgreen;
 }
 
 .gallery > .gallery__list > li:nth-child(10) {
   grid-column: span 1;
-  grid-row: span 2;
+  grid-row: span 1;
   background: yellow;
 }
 
 .gallery > .gallery__list > li:nth-child(11) {
-  grid-column: span 2;
-  grid-row: span 2;
+  grid-column: span 1;
+  grid-row: span 3;
   background: green;
 }
 
 .gallery > .gallery__list > li:nth-child(12) {
   grid-column: span 1;
-  grid-row: span 1;
+  grid-row: span 2;
   background: red;
 }
 
 .gallery > .gallery__list > li:nth-child(13) {
   grid-column: span 1;
-  grid-row: span 1;
+  grid-row: span 2;
   background: brown;
 }
 
 .gallery > .gallery__list > li:nth-child(14) {
   grid-column: span 1;
-  grid-row: span 1;
+  grid-row: span 2;
   background: red;
 }
 
 .gallery > .gallery__list > li:nth-child(15) {
-  grid-column: span 1;
-  grid-row: span 1;
+  grid-column: span 2;
+  grid-row: span 2;
   background: brown;
 }
 
