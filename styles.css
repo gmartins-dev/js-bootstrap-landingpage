@@ -248,3 +248,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+h2{
+  font-size: 80px;
+  text-align: center;
+}
