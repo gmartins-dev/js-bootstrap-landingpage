@@ -133,7 +133,6 @@
   grid-column-end: 8;
 }
 
-
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -158,8 +157,7 @@
 @media (min-width: 768px) {
   .custom-grid {
     grid-template-columns: repeat(10, minmax(min-content, 1fr));
-    grid-template-rows: repeat(6, 1fr;
-
+    grid-template-rows: repeat(6, 1fr);
   }
 }
 
@@ -167,8 +165,7 @@
 @media (min-width: 992px) {
   .custom-grid {
     grid-template-columns: repeat(10, minmax(min-content, 1fr));
-    grid-template-rows: repeat(6, 1fr;
-
+    grid-template-rows: repeat(6, 1fr);
   }
 }
 
@@ -176,8 +173,7 @@
 @media (min-width: 1200px) {
   .custom-grid {
     grid-template-columns: repeat(10, minmax(min-content, 1fr));
-    grid-template-rows: repeat(6, 1fr;
-
+    grid-template-rows: repeat(6, 1fr);
   }
 }
 
@@ -185,7 +181,6 @@
 @media (min-width: 1400px) {
   .custom-grid {
     grid-template-columns: repeat(10, minmax(min-content, 1fr));
-    grid-template-rows: repeat(6, 1fr;
-
+    grid-template-rows: repeat(6, 1fr);
   }
 }
