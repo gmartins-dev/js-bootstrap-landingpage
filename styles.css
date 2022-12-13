@@ -59,6 +59,100 @@
 
 @media only screen and (min-width: 768px) {
   .custom-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+  }
+  #item-0 {
+    background-color: #aeb69b;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-1 {
+    background-color: #c876da;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-2 {
+    background-color: #e5858d;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-3 {
+    background-color: #b75879;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-4 {
+    background-color: #7a78ab;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-5 {
+    background-color: #9d95a5;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-6 {
+    background-color: #7ed7fa;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-7 {
+    background-color: #5e798b;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-8 {
+    background-color: #7bc868;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-9 {
+    background-color: #7ae6ce;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-10 {
+    background-color: #b6a8a9;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-11 {
+    background-color: #ffcc7d;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-12 {
+    background-color: #ce6567;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-13 {
+    background-color: #ffe9ad;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  #item-14 {
+    background-color: #79ab57;
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .custom-grid {
+    grid-template-columns: repeat(3, minmax(min-content, 1fr));
+    grid-template-rows: auto;
+  }
+  #item-14 {
+    background-color: #79ab57;
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .custom-grid {
     grid-template-columns: repeat(10, minmax(min-content, 1fr));
     grid-template-rows: auto;
   }
@@ -181,20 +275,6 @@
 
     grid-row-end: 5;
     grid-column-end: 8;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .custom-grid {
-    grid-template-columns: repeat(10, minmax(min-content, 1fr));
-    grid-template-rows: auto;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .custom-grid {
-    grid-template-columns: repeat(10, minmax(min-content, 1fr));
-    grid-template-rows: auto;
   }
 }
 
