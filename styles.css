@@ -133,8 +133,21 @@
   grid-column-end: 8;
 }
 
+
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
+
+.custom-grid {
+  display: grid;
+
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto;
+
+  grid-auto-flow: dense;
+
+  grid-gap: 0.5rem;
+  height: 90vh; /* switch this in production */
+}
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
@@ -144,24 +157,35 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .custom-grid {
-    display: grid;
+    grid-template-columns: repeat(10, minmax(min-content, 1fr));
+    grid-template-rows: repeat(6, 1fr;
 
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-columns: repeat(10, 1fr);
   }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  ...;
+  .custom-grid {
+    grid-template-columns: repeat(10, minmax(min-content, 1fr));
+    grid-template-rows: repeat(6, 1fr;
+
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  ...;
+  .custom-grid {
+    grid-template-columns: repeat(10, minmax(min-content, 1fr));
+    grid-template-rows: repeat(6, 1fr;
+
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
-  ...;
+  .custom-grid {
+    grid-template-columns: repeat(10, minmax(min-content, 1fr));
+    grid-template-rows: repeat(6, 1fr;
+
+  }
 }
