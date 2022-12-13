@@ -1,9 +1,8 @@
 .custom-grid {
   display: grid;
-
-  grid-template-rows: repeat(auto, 1fr);
-  grid-template-columns: repeat(10, 1fr);
-
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1rem;
   grid-gap: 0.5rem;
   height: 98vh; /* change this in production */
   width: 98vw; /* change this in production */
@@ -144,20 +143,20 @@
 @media only screen and (min-width: 992px) {
   .custom-grid {
     grid-template-columns: repeat(10, minmax(min-content, 1fr));
-    grid-template-rows: repeat(6, 150px);
+    grid-template-rows: auto;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .custom-grid {
     grid-template-columns: repeat(10, minmax(min-content, 1fr));
-    grid-template-rows: repeat(6, 150px);
+    grid-template-rows: auto;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .custom-grid {
     grid-template-columns: repeat(10, minmax(min-content, 1fr));
-    grid-template-rows: repeat(6, 150px);
+    grid-template-rows: auto;
   }
 }
