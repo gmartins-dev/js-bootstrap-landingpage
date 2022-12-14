@@ -43,7 +43,7 @@ body {
 
   grid-auto-flow: dense;
 
-  width: 90vw; /* change this in production */
+  max-width: 1120px; /* change this in production */
   heigth: 90vh; /* change this in production */
 }
 
