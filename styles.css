@@ -1,286 +1,106 @@
 .custom-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(7, 1fr);
   grid-gap: 1rem;
-  grid-gap: 0.5rem;
-  height: 98vh; /* change this in production */
-  width: 98vw; /* change this in production */
-}
-.custom-grid > div {
+  grid-auto-flow: dense;
   border-radius: 15px;
+  height: 100%;
+}
+
+.custom-grid > div {
+}
+
+.custom-grid > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 #item-0 {
   background-color: #aeb69b;
+  grid-column: span 2;
+  grid-row: span 4;
 }
 #item-1 {
   background-color: #c876da;
+  grid-column: span 3;
+  grid-row: span 2;
 }
 #item-2 {
   background-color: #e5858d;
+  grid-column: span 2;
+  grid-row: span 2;
 }
 #item-3 {
   background-color: #b75879;
+  grid-column: span 3;
+  grid-row: span 2;
 }
 #item-4 {
   background-color: #7a78ab;
+  grid-column: span 2;
+  grid-row: span 2;
 }
 #item-5 {
   background-color: #9d95a5;
+  grid-column: span 4;
+  grid-row: span 4;
 }
 #item-6 {
   background-color: #7ed7fa;
+  grid-column: span 1;
+  grid-row: span 3;
 }
 #item-7 {
   background-color: #5e798b;
+  grid-column: span 1;
+  grid-row: span 3;
 }
 #item-8 {
   background-color: #7bc868;
+  grid-column: span 2;
+  grid-row: span 2;
 }
 #item-9 {
   background-color: #7ae6ce;
+  grid-column: span 2;
+  grid-row: span 3;
 }
 #item-10 {
   background-color: #b6a8a9;
+  grid-column: span 1;
+  grid-row: span 1;
 }
 #item-11 {
   background-color: #ffcc7d;
+  grid-column: span 1;
+  grid-row: span 1;
 }
 #item-12 {
   background-color: #ce6567;
+  grid-column: span 1;
+  grid-row: span 1;
 }
 #item-13 {
   background-color: #ffe9ad;
+  grid-column: span 1;
+  grid-row: span 1;
 }
 #item-14 {
   background-color: #79ab57;
+  grid-column: span 1;
+  grid-row: span 1;
 }
 
 @media only screen and (min-width: 768px) {
-  .custom-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(11, 1fr);
-  }
-  #item-0 {
-    background-color: #aeb69b;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-1 {
-    background-color: #c876da;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-2 {
-    background-color: #e5858d;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-3 {
-    background-color: #b75879;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-4 {
-    background-color: #7a78ab;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-5 {
-    background-color: #9d95a5;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-6 {
-    background-color: #7ed7fa;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-7 {
-    background-color: #5e798b;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-8 {
-    background-color: #7bc868;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-9 {
-    background-color: #7ae6ce;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-10 {
-    background-color: #b6a8a9;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-11 {
-    background-color: #ffcc7d;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-12 {
-    background-color: #ce6567;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-13 {
-    background-color: #ffe9ad;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  #item-14 {
-    background-color: #79ab57;
-    grid-column: span 2;
-    grid-row: span 1;
-  }
 }
 
 @media only screen and (min-width: 992px) {
-  .custom-grid {
-    grid-template-columns: repeat(3, minmax(min-content, 1fr));
-    grid-template-rows: auto;
-  }
-  #item-14 {
-    background-color: #79ab57;
-    grid-column: span 1;
-    grid-row: span 1;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
-  .custom-grid {
-    grid-template-columns: repeat(10, minmax(min-content, 1fr));
-    grid-template-rows: auto;
-  }
-  #item-0 {
-    background-color: #aeb69b;
-    grid-row-start: 1;
-    grid-column-start: 1;
-
-    grid-row-end: 4;
-    grid-column-end: 3;
-  }
-  #item-1 {
-    background-color: #c876da;
-    grid-row-start: 4;
-    grid-column-start: 1;
-
-    grid-row-end: 6;
-    grid-column-end: 3;
-  }
-  #item-2 {
-    background-color: #e5858d;
-    grid-row-start: 6;
-    grid-column-start: 1;
-
-    grid-row-end: 7;
-    grid-column-end: 3;
-  }
-  #item-3 {
-    background-color: #b75879;
-    grid-row-start: 6;
-    grid-column-start: 3;
-
-    grid-row-end: 7;
-    grid-column-end: 4;
-  }
-  #item-4 {
-    background-color: #7a78ab;
-    grid-row-start: 1;
-    grid-column-start: 3;
-
-    grid-row-end: 3;
-    grid-column-end: 6;
-  }
-  #item-5 {
-    background-color: #9d95a5;
-    grid-row-start: 1;
-    grid-column-start: 6;
-
-    grid-row-end: 3;
-    grid-column-end: 8;
-  }
-  #item-6 {
-    background-color: #7ed7fa;
-    grid-row-start: 1;
-    grid-column-start: 8;
-
-    grid-row-end: 3;
-    grid-column-end: 11;
-  }
-  #item-7 {
-    background-color: #5e798b;
-    grid-row-start: 3;
-    grid-column-start: 9;
-
-    grid-row-end: 5;
-    grid-column-end: 11;
-  }
-  #item-8 {
-    background-color: #7bc868;
-    grid-row-start: 3;
-    grid-column-start: 8;
-
-    grid-row-end: 5;
-    grid-column-end: 9;
-  }
-  #item-9 {
-    background-color: #7ae6ce;
-    grid-row-start: 5;
-    grid-column-start: 8;
-
-    grid-row-end: 7;
-    grid-column-end: 11;
-  }
-  #item-10 {
-    background-color: #b6a8a9;
-    grid-row-start: 5;
-    grid-column-start: 6;
-
-    grid-row-end: 7;
-    grid-column-end: 8;
-  }
-  #item-11 {
-    background-color: #ffcc7d;
-    grid-row-start: 5;
-    grid-column-start: 4;
-
-    grid-row-end: 7;
-    grid-column-end: 6;
-  }
-  #item-12 {
-    background-color: #ce6567;
-    grid-row-start: 4;
-    grid-column-start: 3;
-
-    grid-row-end: 6;
-    grid-column-end: 4;
-  }
-  #item-13 {
-    background-color: #ffe9ad;
-    grid-row-start: 3;
-    grid-column-start: 3;
-
-    grid-row-end: 4;
-    grid-column-end: 4;
-  }
-  #item-14 {
-    background-color: #79ab57;
-    grid-row-start: 3;
-    grid-column-start: 4;
-
-    grid-row-end: 5;
-    grid-column-end: 8;
-  }
 }
 
 @media only screen and (min-width: 1400px) {
-  .custom-grid {
-    grid-template-columns: repeat(10, minmax(min-content, 1fr));
-    grid-template-rows: auto;
-  }
 }
