@@ -14,26 +14,28 @@
 
     <div class="custom-grid">
       <div class="card card-tall">
-        <img src="./apple/Image (3).png" alt="" width="150px" height="300px" />
-        <p style="font-weight: bold; margin-top: -10px">
-          Share data with loved ones
-        </p>
+        <p>Agents</p>
+        <img
+          src="./grid-imgs/grid-agents.png"
+          alt=""
+          style="max-width: 100%; max-height: 100%"
+        />
       </div>
       <div
         class="card card-wide"
-        style="background-image: url('./apple/Image.png')"
+        style="background-image: url('./grid-imgs/Image.png')"
       >
         Exercises to improve balance
       </div>
       <div class="card">
-        <img src="./apple/Image (8).png" alt="" width="130px" />
+        <img src="./grid-imgs/Image (8).png" alt="" width="130px" />
         <p style="margin-top: -10px; text-align: center">
           Improved cycle tracking predictions with heart rate
         </p>
       </div>
       <div
         class="card card-wide"
-        style="background-image: url('./apple/Image (2).png')"
+        style="background-image: url('./grid-imgs/Image (2).png')"
       ></div>
       <div class="card card-tall">
         <p
@@ -70,43 +72,43 @@
         style="background: linear-gradient(to top right, #1d006c, #662ffb)"
       >
         <img
-          src="./apple/logo-chatwith-white.png"
+          src="./grid-imgs/logo-chatwith-white.png"
           alt=""
           style="border-radius: 4px; max-width: 90%"
         />
       </div>
       <div class="card">
-        <img src="./apple/Image (11).png" alt="" width="130px" />
+        <img src="./grid-imgs/Image (11).png" alt="" width="130px" />
         <p style="margin-top: -15px">Lab Results highlights</p>
       </div>
       <div
         class="card card-tall"
-        style="background-image: url('./apple/Image\ \(10\).png')"
+        style="background-image: url('./grid-imgs/Image\ \(10\).png')"
       ></div>
       <div class="card">
         <img
-          src="./apple/Image (4).png"
+          src="./grid-imgs/grid-whatsapp-widget.png"
           alt=""
-          height="50%"
+          height="100%"
           width="100%"
-          style="border-radius: 15px"
         />
+        <p>WhastsApp Widget</p>
       </div>
       <div class="card">
-        <img src="./apple/Image (7).png" alt="" width="130px" />
+        <img src="./grid-imgs/Image (7).png" alt="" width="130px" />
         <p>Share data with doctor</p>
       </div>
       <div class="card card-tall">
-        <img src="./apple/Image (6).png" alt="" width="130px" />
+        <img src="./grid-imgs/Image (6).png" alt="" width="130px" />
         <p style="margin-top: -20px">Lab results pinning</p>
       </div>
       <div class="card">
-        <img src="./apple/Image (1).png" alt="" height="50%" />
+        <img src="./grid-imgs/Image (1).png" alt="" height="50%" />
         <p style="margin-top: 30px">Walking Steadiness</p>
       </div>
       <div class="card" style="display: table-row">
         <div style="display: flex; align-items: center">
-          <img src="./apple/Image (5).png" alt="" width="50px" />
+          <img src="./grid-imgs/Image (5).png" alt="" width="50px" />
           <p
             style="
               color: #000;
@@ -120,7 +122,7 @@
         </div>
       </div>
       <div class="card card-wide">
-        <img src="./apple/Image (12).png" alt="" />
+        <img src="./grid-imgs/Image (12).png" alt="" />
       </div>
       <div class="card card-wide" style="display: table-row">
         <div
@@ -133,7 +135,7 @@
           <h3 style="color: #000; font-weight: 500; margin-left: 10px">
             Trends
           </h3>
-          <img src="./apple/Image (9).png" alt="" width="250px" />
+          <img src="./grid-imgs/Image (9).png" alt="" width="250px" />
         </div>
       </div>
     </div>
@@ -161,7 +163,10 @@
       }
 
       .card > p {
-        font-size: 0.75rem;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        text-align: center;
         color: #000;
       }
 
@@ -180,8 +185,8 @@
 
         grid-auto-flow: dense;
 
-        max-width: 1120px; /* change this in production */
-        height: 90vh; /* change this in production */
+        max-width: 1120px; /* full-grid at desktops resolution */
+        height: 700px; /* change this in production */
         margin: 0 auto;
       }
 
